@@ -8,7 +8,7 @@ import java.util.Date;
 //@TableName("ds_appointment")
 @Data
 public class Company {
-    private Long id;
+    private String id;
     private String dsName;
     private String password;
     private String name;
