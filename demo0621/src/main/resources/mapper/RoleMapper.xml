@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hujun.demo0621.mapping.RoleMapper">
+    <resultMap id="peUser_map" type="com.hujun.demo0621.pojo.PeRole">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="description" column="description"/>
+    </resultMap>
+
+    <!--<select id="findAll" resultType="com.hujun.demo0621.pojo.PeUser">-->
+        <!--select * from user-->
+    <!--</select>-->
+
+    <select id="findByUsername" parameterType="string" resultType="com.hujun.demo0621.pojo.PeRole">
+        SELECT
+        *
+        FROM
+        pe_role
+        WHERE
+        id = `1`
+
+    </select>
+</mapper>

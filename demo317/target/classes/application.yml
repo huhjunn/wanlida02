@@ -1,0 +1,12 @@
+server:
+    port: 8080
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/wanlidadb?serverTimezone=UTC
+        username: root
+        password: 111111jun
+        driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+    mapper-locations: classpath:mapper/*.xml  #ע�⣺һ��Ҫ��Ӧmapperӳ��xml�ļ�������·��
+    type-aliases-package: com.example.entity
+    # ע�⣺��Ӧʵ�����·��
