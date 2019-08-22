@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.appointment.user.mapper.PermissionMapper">
+
+    <!-- 根据id查询用户 -->
+    <!--<select id="findUserById" parameterType="int" resultType="user">-->
+        <!--select * from `user` where id = #{id}-->
+    <!--</select>-->
+
+    <!-- 添加用户 -->
+    <!--<insert id="insertUser" parameterType="user">-->
+        <!--<selectKey keyProperty="id" resultType="int" order="AFTER">-->
+            <!--SELECT LAST_INSERT_ID()-->
+        <!--</selectKey>-->
+        <!--INSERT INTO `user` (username, birthday, sex, address) VALUES (#{username}, #{birthday}, #{sex}, #{address})-->
+    <!--</insert>-->
+
+    <!-- 根据用户id查询角色 -->
+    <select id="findPermissionsByRoleId" parameterType="string" resultType="com.appointment.user.Permission">
+    select * from permission where id in (
+      SELECT permission_id FROM role_permission WHERE role_id = #{id}
+    )
+    </select>
+
+</mapper>

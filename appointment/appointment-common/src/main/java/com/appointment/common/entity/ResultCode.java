@@ -10,6 +10,7 @@ public enum ResultCode {
     FAIL(false,10001,"操作失败"),
     UNAUTHENTICATED(false,10002,"您还未登录"),
     UNAUTHORISE(false,10003,"权限不足"),
+    PHONEORPASSWORDERROR(false,10004,"电话或密码错误"),
     SERVER_ERROR(false,99999,"抱歉，系统繁忙，请稍后重试！");
     //---用户操作返回码----
     //---企业操作返回码----

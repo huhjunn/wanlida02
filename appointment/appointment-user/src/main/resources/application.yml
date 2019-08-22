@@ -8,3 +8,6 @@ spring:
         url: jdbc:mysql://localhost:3306/ds_appointment?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
         username: root
         password: 111111jun
+mybatis-plus:
+#    config-location: classpath:mybatis-config.xml
+    mapper-locations: classpath*:com/appointment/user/*.xml

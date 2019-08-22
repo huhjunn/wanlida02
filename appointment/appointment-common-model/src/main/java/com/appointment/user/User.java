@@ -1,4 +1,4 @@
-package com.appointment.company;
+package com.appointment.user;
 
 import lombok.Data;
 

@@ -12,5 +12,13 @@
     <groupId>com.jiaxiao</groupId>
     <artifactId>appointment-common</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.jiaxiao</groupId>
+            <artifactId>appointment-common-model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
